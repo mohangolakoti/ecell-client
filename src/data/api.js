@@ -1,2 +1,2 @@
-export const API_URL = "http://localhost:4000/api";
-export const API_IMG = "http://localhost:4000";
+export const API_URL = "https://ecell-server.onrender.com/api";
+export const API_IMG = "https://ecell-server.onrender.com";
