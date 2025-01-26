@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { API_URL } from '../data/api';
+import { API_IMG, API_URL } from '../data/api';
 import { FaLinkedin, FaTrashAlt } from 'react-icons/fa'; // Import Trash Icon
 import { Link } from 'react-router-dom';
 import { IoMdAdd } from 'react-icons/io';
@@ -61,7 +61,7 @@ const Team = () => {
             {member.profileImage && (
               <div className="relative w-full mx-auto mb-6 overflow-hidden rounded-t-lg shadow-lg ">
                 <img
-                  src={`http://localhost:4000${member.profileImage}`} // Update URL as per your setup
+                  src={`${API_IMG}${member.profileImage}`} // Update URL as per your setup
                   alt={member.name}
                   className="w-full h-60 object-cover"
                 />

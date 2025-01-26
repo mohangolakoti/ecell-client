@@ -56,7 +56,7 @@ const UpcomingEvent = () => {
   }, [event]);
 
   if (!event) {
-    return <div>Loading upcoming event...</div>;
+    return <div className='text-[#acacac]'>Loading upcoming event...</div>;
   }
 
   return (

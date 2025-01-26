@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { API_URL } from '../data/api';
+import { API_IMG, API_URL } from '../data/api';
 import { Link } from 'react-router-dom';
 import { IoMdAdd } from 'react-icons/io';
 
@@ -54,7 +54,7 @@ const CaseStudy = () => {
             {/* Image */}
             {caseStudy.coverImage && (
               <img
-                src={`http://localhost:4000${caseStudy.coverImage}`}
+                src={`${API_IMG}${caseStudy.coverImage}`}
                 alt={caseStudy.title}
                 className="w-full h-48 object-cover rounded mb-4"
               />
@@ -89,7 +89,7 @@ const CaseStudy = () => {
             {/* Image */}
             {selectedCaseStudy.coverImage && (
               <img
-                src={`http://localhost:4000${selectedCaseStudy.coverImage}`}
+                src={`${API_IMG}${selectedCaseStudy.coverImage}`}
                 alt={selectedCaseStudy.title}
                 className="w-full h-64 object-cover rounded mb-4"
               />
